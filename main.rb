@@ -1,5 +1,5 @@
-require_relative 'hello'
-require_relative 'answers'
+require_relative 'lib/hello'
+require_relative 'lib/answers'
 
 if (Gem.win_platform?)
   Encoding.default_external = Encoding.find(Encoding.locale_charmap)
@@ -8,6 +8,10 @@ if (Gem.win_platform?)
   [STDIN, STDOUT].each do |io|
     io.set_encoding(Encoding.default_external, Encoding.default_internal)
   end
+end
+
+def __ENCODING__
+  # code here
 end
 
 print "Оу....кто-то пришёл... *хлоп дверью*\n"

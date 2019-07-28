@@ -17,7 +17,9 @@
 
 Необходима версия Ruby 2.x.x
 
-  >**ruby** magic_sphere_v3.rb
+```
+ruby main.rb
+```
   
 <h3>Для кого</h3>
 
